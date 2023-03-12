@@ -26,7 +26,8 @@ namespace ecommerce
 
         public Product AddProduct(Product product)
         {
-            return "hello";
+            this.products.Add(product);
+            return product;
         }
 
         public Product UpdateProduct(int id,Product product)

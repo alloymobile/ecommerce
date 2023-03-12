@@ -8,7 +8,13 @@ namespace ecommerce
 {
     public class ProductResource
     {
-        //CRUD  - REST End points GET, POST, PUT and DELETE
+        private ProductService service;
+        
+        public ProductResource()
+        {
+            this.service = new ProductService();
+        }
+        
         public List<Product> GetProducts()
         {
             return null;
@@ -21,7 +27,7 @@ namespace ecommerce
 
         public Product AddProduct(Product product)
         {
-            return null;
+            return this.service.AddProduct(product);
         }
 
         public Product UpdateProduct(Product product)
