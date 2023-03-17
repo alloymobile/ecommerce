@@ -8,8 +8,12 @@ namespace ecommerce
 {
     internal class Program
     {
+        private static ProductResource resource =  new ProductResource();
+        
         static void Main(string[] args)
         {
+            Console.WriteLine("!My Shop!");
+            resource.GetProducts().ForEach(x => Console.WriteLine(x.Id + " "+x.Name));
         }
     }
 }

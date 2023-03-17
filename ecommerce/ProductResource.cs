@@ -8,16 +8,12 @@ namespace ecommerce
 {
     public class ProductResource
     {
-        private ProductService service;
-        
-        public ProductResource()
-        {
-            this.service = new ProductService();
-        }
+        private ProductService service = new ProductService();
+       
         
         public List<Product> GetProducts()
         {
-            return null;
+            return service.GetProducts();
         }
 
         public Product GetProduct(int id)

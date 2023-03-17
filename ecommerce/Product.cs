@@ -22,9 +22,25 @@ namespace ecommerce
             this.quantity = quantity;
         }
 
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public double Price { get; set; }
-        public int Quantity { get; set; }
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public double Price
+        {
+            get { return price; }
+            set { price = value; }
+        }
+        public int Quantity
+        {
+            get { return quantity; }
+            set { quantity = value; }
+        }
     }
 }

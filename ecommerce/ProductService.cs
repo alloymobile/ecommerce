@@ -16,7 +16,7 @@ namespace ecommerce
 
         public List<Product> GetProducts() 
         {
-            return null;
+            return products;
         }
 
         public Product GetProduct(int id)

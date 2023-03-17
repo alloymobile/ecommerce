@@ -14,7 +14,12 @@ namespace ProductTest
         [Test]
         public void ProductService_AddProduct_Valid()
         {
-            Product product = new Product()
+            Product p = new Product(3,"Computer",5,1000);
+            ProductService service = new ProductService();
+            int expected = 3;
+            Product p1 = service.AddProduct(p);
+            int actual = p1.getId();
+            Assert.AreEqual(expected, actual);
         }
     }
 }
